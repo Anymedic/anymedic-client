@@ -1,0 +1,245 @@
+.talk {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 36px 20px;
+
+  .talk-search-wrapper {
+    position: relative;
+    width: 100%;
+
+    .talk-search {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      width: 100%;
+      height: 60px;
+      padding: 10px 10px 10px 20px;
+      margin-bottom: 20px;
+      border-radius: 51px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+      z-index: 10;
+      .talk-search-input {
+        flex: 1;
+        height: 100%;
+
+        &::placeholder {
+          font-size: 14px;
+          color: #AAAAAA;
+        }
+      }
+      .talk-search-icons{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 100%;
+        .talk-search-icon {
+          height: 100%;
+          object-fit: cover;
+          cursor: pointer;
+        }
+      }
+
+
+    }
+
+
+    .talk-search-history {
+      position: absolute;
+      top: 28px;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 50px 20px 20px;
+      border-bottom-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+      background-color: #F3F3F3;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+
+      .talk-search-history-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 0;
+      }
+    }
+  }
+
+  .talk-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px 20px 32px;
+    background-color: #F3F3F3;
+    border-radius: 30px;
+
+    .talk-info-text {
+      font-weight: 300;
+      text-align: center;
+      white-space: pre-wrap;
+    }
+  }
+
+  .talk-result {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .talk-result-count {
+      font-size: 14px;
+      color: gray;
+      margin-bottom: 10px;
+    }
+
+    .talk-result-item-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .talk-result-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        padding: 0 20px;
+        border-radius: 30px;
+        border: 1px solid #CFCFCF;
+        .talk-result-item-icon{
+          width: 16px;
+          object-fit: cover;
+          margin-right: 8px;
+        }
+        .talk-result-item-reason {
+          width: 90%;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+
+      }
+    }
+
+  }
+
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 998;
+}
+
+.talk-detail-modal {
+  position: absolute;
+  top: calc(50% + 40px);
+  left: 50%;
+  width: 90%;
+  max-height: 80%;
+
+  transform: translate(-50%, -50%);
+  border: none;
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  outline: none;
+  padding: 30px 22px;
+  border-radius: 30px;
+  z-index: 999;
+
+  .talk-detail-modal-content {
+    display: flex;
+    flex-direction: column;
+
+    .talk-detail-modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .talk-detail-modal-reason {
+        width: 80%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        font-weight: 600;
+      }
+    }
+    .talk-detail-modal-divide {
+      width: 100%;
+      height: 1px;
+      background-color: #dcdcdc;
+      margin: 20px 0;
+    }
+    .talk-detail-modal-main{
+      display: flex;
+      flex-direction: column;
+      .talk-detail-modal-main-head{
+        margin-bottom: 8px;
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--main-color);
+      }
+      .talk-detail-modal-main-description{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 30px;
+        white-space: pre-wrap;
+      }
+    }
+
+    .talk-detail-modal-main-hospital{
+      display: flex;
+      flex-direction: column;
+      padding: 14px 12px;
+      border-radius: 20px;
+      border: 1px solid #CFCFCF;
+      .talk-detail-modal-main-hospital-top{
+        display: flex;
+        align-items: flex-end;
+        gap: 6px;
+        margin-bottom: 2px;
+
+        .talk-detail-modal-main-hospital-name{
+          font-size: 20px;
+          font-weight: 500;
+        }
+        .talk-detail-modal-main-hospital-distance{
+          font-size: 16px;
+          font-weight: 300;
+        }
+      }
+      .talk-detail-modal-main-hospital-address{
+        width: 100%;
+        //text-overflow: ellipsis;
+        //overflow: hidden;
+        //white-space: nowrap;
+        color: #7C7C7C;
+        margin-bottom: 10px;
+      }
+      .talk-detail-modal-main-hospital-subject{
+        font-size: 14px;
+      }
+
+    }
+    .talk-detail-modal-main-isEmergency{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 30px;
+      text-align: center;
+      .talk-detail-modal-main-isEmergency-image{
+        width: 60px;
+        object-fit: cover;
+        cursor: pointer;
+      }
+    }
+
+  }
+}

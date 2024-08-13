@@ -1,0 +1,210 @@
+.medicine {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 16px;
+
+  .medicine-tab-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+
+    .medicine-tab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 46px;
+      border-top-right-radius: 16px;
+      border-top-left-radius: 16px;
+      box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.1);
+      background-color: #F0F0F0;
+      color: #737373;
+      font-weight: 500;
+      cursor: pointer;
+
+      &.selected {
+        background-color: #FFFFFF;
+        color: #000000;
+      }
+    }
+  }
+
+  .medicine-content {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+  }
+
+}
+
+.drug {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .drug-notice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 36px;
+    border-radius: 30px;
+    background-color: #F3F3F3;
+
+    .drug-notice-text {
+      white-space: pre-wrap;
+      text-align: center;
+    }
+
+  }
+
+  .drug-items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .drug-row {
+      display: flex;
+      flex-direction: column;
+
+      .drug-row-title {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 14px;
+      }
+    }
+  }
+}
+
+.drug-swiper {
+  width: 100%;
+
+  .drug-swiper-slide {
+    width: 120px;
+    text-align: center;
+
+    .drug-swiper-slide-img {
+      width: 100%;
+      height: 120px;
+      padding: 10px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      border: 1px solid #e7e7e7;
+    }
+
+    .drug-swiper-slide-name {
+      font-size: 14px;
+    }
+  }
+}
+
+.drug-store {
+  width: 100%;
+  height: 100%;
+  .drug-view-button{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 80px;
+    object-fit: cover;
+    z-index: 1001;
+    cursor: pointer;
+  }
+  .drug-store-list{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
+    .drug-store-row{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+      .drug-store-row-top{
+        display: flex;
+        gap: 8px;
+        .drug-store-name{
+          font-size: 20px;
+          font-weight: 500;
+        }
+        .drug-store-distance{
+          font-weight: 300;
+          font-size: 18px;
+        }
+      }
+      .drug-store-address{
+
+      }
+    }
+    .drug-store-divide{
+      width: 100%;
+      height: 1px;
+      background-color: #E6E6E6;
+      margin: 20px 0;
+    }
+  }
+}
+
+
+.custom-overlay {
+  position: relative;
+  bottom: 45px;
+  border-radius: 6px;
+  float: left;
+  cursor: pointer;
+  &:nth-of-type{
+    border: 0;
+    box-shadow: 0 1px 2px #888;
+  }
+  .title{
+    display: block;
+    text-align: center;
+    background: #fff;
+    margin-right: 35px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    margin-left: -5px;
+    left: 50%;
+    bottom: -12px;
+    width: 22px;
+    height: 12px;
+    background: url('../assets/images/icon_overlay.svg') no-repeat;
+  }
+}
+.custom-overlay-wrapper{
+  display: block;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+  overflow: hidden;
+  background: #81E6D9 url('../assets/images/icon_right_arrow.svg') no-repeat right 12px center;
+}
+//
+//.customoverlay a {
+//
+//}
+//
+//.customoverlay .title {
+//  display: block;
+//  text-align: center;
+//  background: #fff;
+//  margin-right: 35px;
+//  padding: 10px 15px;
+//  font-size: 14px;
+//  font-weight: bold;
+//}
+//
+//.customoverlay
