@@ -1,46 +1,33 @@
-# Getting Started with Create React App
+# 2024 K-HTML 해커톤 - ANYMEDIC
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 팀 소개
+### 팀명: 채찍피티
 
-## Available Scripts
+### 팀원
 
-In the project directory, you can run:
+|                                                                                        기획 및 디자인 - 임유경                                                                                         |                                                                                           프론트 - 정의왕                                                                                            |                                                                                       서버 - 김대휘                                                                                       |                                                                                           서버 - 강병호                                                                                            |
+|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| <img src="https://2024-big-data-course-kang.s3.ap-northeast-2.amazonaws.com/%E1%84%8B%E1%85%B5%E1%86%B7%E1%84%8B%E1%85%B2%E1%84%80%E1%85%A7%E1%86%BC.jpeg" alt="임유경" width="80" height="100"> | <img src="https://2024-big-data-course-kang.s3.ap-northeast-2.amazonaws.com/%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%8B%E1%85%B4%E1%84%8B%E1%85%AA%E1%86%BC.jpeg" alt="정의왕" width="100" height="100"> | <img src="https://2024-big-data-course-kang.s3.ap-northeast-2.amazonaws.com/%E1%84%80%E1%85%B5%E1%86%B7%E1%84%83%E1%85%A2%E1%84%92%E1%85%B1.jpeg" alt="김대휘" width="80" height="100"> | <img src="https://2024-big-data-course-kang.s3.ap-northeast-2.amazonaws.com/%E1%84%80%E1%85%A1%E1%86%BC%E1%84%87%E1%85%A7%E1%86%BC%E1%84%92%E1%85%A9.jpeg" alt="강병호" width="80" height="100"> |
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 프로젝트 개요
+용인시 내 보건의료 시설, 전문의 부족을 해결하고자 생성형 AI를 활용하여 24시간동안 언제 어디서든 의료 정보 질문할 수 있는 서비스 ANYMEDIC을 개발했습니다. 증상 원인, 대처 방법을 알려줄 뿐만 아니라 인근 병원과 상비약을 판매하는 가게를 찾아주어 지식적, 시간적 의료 공백을 채울 수 있습니다.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 생성형 AI 기반 의료 정보 검색
+ANYMEDIC의 TALK 기능은 생성형 AI를 활용한 검색기능입니다. 정확한 병명을 모르는 사람은 증상을 입력함으로써 원하는 결과를 빠르게 얻을 수 있습니다. 특히 외국인은 한국에서 증상이나 병명을 말하기 힘든데 검색어를 넣어야 하는 인터넷과 다르게 구어체로 검색해도 결과가 잘 나옵니다.
 
-### `npm test`
+<p align="center"><img src="https://2024-big-data-course-kang.s3.ap-northeast-2.amazonaws.com/Slide+16_9+-+52.png" height="380px"> </p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## 실제 데이터가 반영된 상비약 판매점 찾기
+응급실을 갈 정도는 아니지만 머리가 아파서 약을 먹어야 잘 수 있는 상황에 경우 집에 약이 없으면 사러 나가야 한다. ANYMEDIC은 공공데이터포털에서 제공하는 ‘안정상비의약품 판매업소 현황’ 데이터를 수집하여 상비약 판매점 지도를 만들었다.이 지도는 상비약을 판매하는 편의점들을 찾아 헤매지 않고 적은 시간으로도 원하는 상비약을 구매할 수 있다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="center"><img src="https://2024-big-data-course-kang.s3.ap-northeast-2.amazonaws.com/Slide+16_9+-+54.png" height="380px"> </p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 링크
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 도메인
+``https://anymedic.store``
