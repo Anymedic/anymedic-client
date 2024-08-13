@@ -23,7 +23,7 @@
 }
 .menu-panel-wrapper{
   display: flex;
-  width: 174px !important;
+  width: 240px !important;
   padding: 20px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
@@ -41,7 +41,7 @@
     .menu-wrapper{
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 20px;
       .menu-panel-menu{
         font-size: 18px;
         font-weight: 400;
