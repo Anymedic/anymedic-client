@@ -111,6 +111,7 @@ export const GlobalStyle = css`
     padding: 0;
     border: 0;
     vertical-align: baseline;
+    line-height: 1.2;
   }
 
   /* HTML5 display-role reset for older browsers */
