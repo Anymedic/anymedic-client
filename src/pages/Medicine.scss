@@ -127,6 +127,7 @@
       gap: 6px;
       .drug-store-row-top{
         display: flex;
+        align-items: flex-end;
         gap: 8px;
         .drug-store-name{
           font-size: 20px;
@@ -138,7 +139,8 @@
         }
       }
       .drug-store-address{
-
+        font-size: 14px;
+        color: #7C7C7C;
       }
     }
     .drug-store-divide{
