@@ -8,7 +8,7 @@
 <table>
   <tr>
     <td align="center">
-      <img src="https://2024-big-data-course-kang.s3.ap-northeast-2.amazonaws.com/%E1%84%8B%E1%85%B5%E1%86%B7%E1%84%8B%E1%85%B2%E1%84%80%E1%85%A7%E1%86%BC2.png" width="100px" height="100px" alt=""/>
+      <img src="https://2024-big-data-course-kang.s3.ap-northeast-2.amazonaws.com/%E1%84%8B%E1%85%B5%E1%86%B7%E1%84%8B%E1%85%B2%E1%84%80%E1%85%A7%E1%86%BC2.png" width="80px" height="100px" alt=""/>
       <br />
       <sub>
         <b>기획/디자인-임유경</b>
@@ -22,14 +22,14 @@
       </sub>
     </td>
     <td align="center">
-      <img src="https://2024-big-data-course-kang.s3.ap-northeast-2.amazonaws.com/%E1%84%80%E1%85%B5%E1%86%B7%E1%84%83%E1%85%A2%E1%84%92%E1%85%B1.jpeg" width="100px" height="100px" alt=""/>
+      <img src="https://2024-big-data-course-kang.s3.ap-northeast-2.amazonaws.com/%E1%84%80%E1%85%B5%E1%86%B7%E1%84%83%E1%85%A2%E1%84%92%E1%85%B1.jpeg" width="80px" height="100px" alt=""/>
       <br />
       <sub>
         <b>서버-김대휘</b>
       </sub>
     </td>
     <td align="center">
-      <img src="https://2024-big-data-course-kang.s3.ap-northeast-2.amazonaws.com/%E1%84%80%E1%85%A1%E1%86%BC%E1%84%87%E1%85%A7%E1%86%BC%E1%84%92%E1%85%A9.jpeg" width="100px" height="100px" alt=""/>
+      <img src="https://2024-big-data-course-kang.s3.ap-northeast-2.amazonaws.com/%E1%84%80%E1%85%A1%E1%86%BC%E1%84%87%E1%85%A7%E1%86%BC%E1%84%92%E1%85%A9.jpeg" width="80px" height="100px" alt=""/>
       <br />
       <sub>
         <b>서버-강병호</b>
