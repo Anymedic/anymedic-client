@@ -42,7 +42,7 @@ const Talk = () => {
 
       const localHistory = localStorage.getItem('local-history');
       let parsedHistory = [];
-      if(localHistory){
+      if(localHistory) {
         parsedHistory = JSON.parse(localHistory);
       }
       const newHistory = parsedHistory.concat(data)
@@ -59,7 +59,7 @@ const Talk = () => {
       // setSearchHistory(newSearchHistory.reverse().slice(0, 3))
 
       setResult(data);
-    } catch (e) {
+    } catch (e: any) {
       setResult([]);
     } finally {
       setSearchLoading(false)
@@ -154,29 +154,36 @@ const Talk = () => {
                   <span className="talk-detail-modal-main-description">
                 {selectedResult.detail.manage}
               </span>
-                  <div className="talk-detail-modal-main-hospital">
-                    <div className="talk-detail-modal-main-hospital-top">
+                  {selectedResult.detail?.hospital &&
+                    <>
+                      <div className="talk-detail-modal-main-hospital">
+                        <div className="talk-detail-modal-main-hospital-top">
                       <span className="talk-detail-modal-main-hospital-name">
                         {selectedResult.detail.hospital.name}
                       </span>
-                      <span className="talk-detail-modal-main-hospital-distance">
+                          <span className="talk-detail-modal-main-hospital-distance">
                         {`${selectedResult.detail.hospital.distance.toFixed(0)}m`}
                       </span>
-                    </div>
-                    <span className="talk-detail-modal-main-hospital-address">
+                        </div>
+                        <span className="talk-detail-modal-main-hospital-address">
                       {selectedResult.detail.hospital.address}
                     </span>
-                    <span className="talk-detail-modal-main-hospital-subject">
+                        <span className="talk-detail-modal-main-hospital-subject">
                     {`진료과목: ${selectedResult.detail.hospital.subject}`}
                     </span>
-                  </div>
-                  <div className='talk-detail-modal-main-isEmergency'>
-                    {selectedResult.detail.emergency &&
-                      <span style={{marginBottom: 20}}>정확한 진단이 필요해요! <strong
-                        style={{color: '#FFAE00'}}>119 신고하기</strong></span>
-                    }
-                    <img className='talk-detail-modal-main-isEmergency-image' src={EmergencyIcon} alt=""/>
-                  </div>
+                      </div>
+                      <div className='talk-detail-modal-main-isEmergency'>
+                        {selectedResult.detail.emergency &&
+                          <span style={{marginBottom: 20}}>정확한 진단이 필요해요! <strong
+                            style={{color: '#FFAE00'}}>119 신고하기</strong></span>
+                        }
+                        <a href={`sms:01032853887&body=응급한 상황입니다.`}>
+                          <img className='talk-detail-modal-main-isEmergency-image' src={EmergencyIcon} alt=""/>
+                        </a>
+
+                      </div>
+                    </>
+                  }
                 </div>
               </div>
             </Modal>

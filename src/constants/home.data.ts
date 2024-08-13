@@ -1,7 +1,7 @@
 import HomeData1 from '../assets/images/img_home_data1.png';
 import HomeData2 from '../assets/images/img_home_data2.png';
 import HomeDataDetail1 from '../assets/images/img_data1_1.png';
-import HomeDataDetail2 from '../assets/images/img_data1_1.png';
+import HomeDataDetail2 from '../assets/images/img_data1_2.png';
 import HomeDataDetail3 from '../assets/images/img_data2_1.png';
 import HomeDataDetail4 from '../assets/images/img_data2_2.png';
 

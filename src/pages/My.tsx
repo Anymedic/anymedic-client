@@ -66,19 +66,22 @@ const My = () => {
               <span className="history-detail-index-text">
                 {selectedHistory.detail.manage}
               </span>
-              <div className="history-detail-hospital">
-                <div className="history-detail-hospital-top">
-                  <span className='history-detail-hospital-name'>{selectedHistory.detail.hospital.name}</span>
-                  <span className='history-detail-hospital-distance'>{`${selectedHistory.detail.hospital.distance.toFixed(0)}m`}</span>
-                </div>
-                <span className='history-detail-hospital-address'>
+              {
+                selectedHistory.detail?.hospital &&
+                <div className="history-detail-hospital">
+                  <div className="history-detail-hospital-top">
+                    <span className='history-detail-hospital-name'>{selectedHistory.detail.hospital.name}</span>
+                    <span
+                      className='history-detail-hospital-distance'>{`${selectedHistory.detail.hospital.distance.toFixed(0)}m`}</span>
+                  </div>
+                  <span className='history-detail-hospital-address'>
                   {selectedHistory.detail.hospital.address}
                 </span>
-                <span className='history-detail-hospital-subject'>
+                  <span className='history-detail-hospital-subject'>
                   {`진료 과목: ${selectedHistory.detail.hospital.subject}`}
                 </span>
-              </div>
-
+                </div>
+              }
             </div>
             <span className='history-detail-delete' onClick={(e) => onDeleteHistoryInside(e, selectedHistory)}>
               삭제하기
