@@ -197,7 +197,7 @@ const Talk = () => {
                 className="talk-search-input"
                 placeholder={'아픈 부위, 상태, 기간 등을 설명해주세요'}/>
               <div className='talk-search-icons'>
-                <Mic color={'#AEAEAE'}/>
+                {/*<Mic color={'#AEAEAE'}/>*/}
                 <img className='talk-search-icon' src={SearchIcon} alt="search" onClick={(e) => {
                   setSearchLoading(true)
                   onSearch(e)
