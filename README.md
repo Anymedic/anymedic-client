@@ -7,16 +7,34 @@
 
 <table>
   <tr>
-    <th>기획/디자인 - 임유경</th>
-    <th>프론트 - 정의왕</th>
-    <th>서버 - 김대휘</th>
-    <th>서버 - 강병호</th>
-  </tr>
-  <tr>
-    <td><img src="https://2024-big-data-course-kang.s3.ap-northeast-2.amazonaws.com/%E1%84%8B%E1%85%B5%E1%86%B7%E1%84%8B%E1%85%B2%E1%84%80%E1%85%A7%E1%86%BC2.png" alt="임유경" style="width: 100px; height: auto;"></td>
-    <td><img src="https://2024-big-data-course-kang.s3.ap-northeast-2.amazonaws.com/%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%8B%E1%85%B4%E1%84%8B%E1%85%AA%E1%86%BC.jpeg" alt="정의왕" style="width: 80px; height: auto;"></td>
-    <td><img src="https://2024-big-data-course-kang.s3.ap-northeast-2.amazonaws.com/%E1%84%80%E1%85%B5%E1%86%B7%E1%84%83%E1%85%A2%E1%84%92%E1%85%B1.jpeg" alt="김대휘" style="width: 100px; height: auto;"></td>
-    <td><img src="https://2024-big-data-course-kang.s3.ap-northeast-2.amazonaws.com/%E1%84%80%E1%85%A1%E1%86%BC%E1%84%87%E1%85%A7%E1%86%BC%E1%84%92%E1%85%A9.jpeg" alt="강병호" style="width: 100px; height: auto;"></td>
+    <td align="center">
+      <img src="https://2024-big-data-course-kang.s3.ap-northeast-2.amazonaws.com/%E1%84%8B%E1%85%B5%E1%86%B7%E1%84%8B%E1%85%B2%E1%84%80%E1%85%A7%E1%86%BC2.png" width="100px" height="100px" alt=""/>
+      <br />
+      <sub>
+        <b>기획/디자인-임유경</b>
+      </sub>
+    </td>
+    <td align="center">
+      <img src="https://2024-big-data-course-kang.s3.ap-northeast-2.amazonaws.com/%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%8B%E1%85%B4%E1%84%8B%E1%85%AA%E1%86%BC.jpeg" width="100px" height="100px" alt=""/>
+      <br />
+      <sub>
+        <b>프론트-정의왕</b>
+      </sub>
+    </td>
+    <td align="center">
+      <img src="https://2024-big-data-course-kang.s3.ap-northeast-2.amazonaws.com/%E1%84%80%E1%85%B5%E1%86%B7%E1%84%83%E1%85%A2%E1%84%92%E1%85%B1.jpeg" width="100px" height="100px" alt=""/>
+      <br />
+      <sub>
+        <b>서버-김대휘</b>
+      </sub>
+    </td>
+    <td align="center">
+      <img src="https://2024-big-data-course-kang.s3.ap-northeast-2.amazonaws.com/%E1%84%80%E1%85%A1%E1%86%BC%E1%84%87%E1%85%A7%E1%86%BC%E1%84%92%E1%85%A9.jpeg" width="100px" height="100px" alt=""/>
+      <br />
+      <sub>
+        <b>서버-강병호</b>
+      </sub>
+    </td>
   </tr>
 </table>
 
