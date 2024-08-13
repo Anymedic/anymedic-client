@@ -7,6 +7,7 @@ import {useEffect, useRef, useState} from "react";
 import Modal from "react-modal";
 import Loading from "../components/Loading";
 import axios from "axios";
+import toast from "react-hot-toast";
 
 const Talk = () => {
   const [loading, setLoading] = useState(true)
@@ -60,6 +61,13 @@ const Talk = () => {
 
       setResult(data);
     } catch (e: any) {
+      console.log(e.response)
+      const {data} = e.response;
+      if(data?.error?.data) {
+        toast(data.error.data, {
+          icon: '👋'
+        });
+      }
       setResult([]);
     } finally {
       setSearchLoading(false)
